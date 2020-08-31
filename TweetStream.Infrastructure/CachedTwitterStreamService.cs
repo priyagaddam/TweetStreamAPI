@@ -12,7 +12,6 @@ namespace TweetStream.Infrastructure
     {
         private readonly IMemoryCache _cache;
         private static readonly string _tweetsKey = "realTimeTweets";
-        private static readonly TimeSpan _defaultCacheDuration = TimeSpan.FromHours(2);
 
         public CachedTwitterStreamService(IMemoryCache cache)
         {
